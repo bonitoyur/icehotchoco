@@ -4,29 +4,48 @@
 <head>
     <meta charset='utf-8' />
     <!-- fullcalendar-->
-    <link href='fullcalendar/main.css' rel='stylesheet' />
-    <script src='fullcalendar/main.js'></script>
+    <link href='./fullcalendar/main.css' rel='stylesheet' />
+    <script src='./fullcalendar/main.js'></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
                 events: [
-                {
-                    title: 'The Title', // 제목
-                    start: '2022-02-15', // 시작일자
-                    end: '2022-02-20' // 종료일자
-                },
-                {
-                    title: 'The Title', // 제목
-                    start: '2018-09-01', // 시작일자
-                    end: '2018-09-02' // 종료일자
-                }, {
-                    title: 'The Title', // 제목
-                    start: '2018-09-01', // 시작일자
-                    end: '2018-09-02' // 종료일자
-                }
-            ]
+                    {
+                        title: '물산 타워룸 사용 예정(09시~)',
+                        start: '2022-02-21',
+                        end: '2022-02-21'
+                    },
+                    {
+                        title: '물산 타워룸 사용 예정(지원)',
+                        start: '2022-03-24',
+                        end: '2022-03-24'
+                    },
+                    {
+                        title: '물산 예약시스템 기능 업로드(테스트 서버)',
+                        start: '2022-02-15',
+                        end: '2018-02-19'
+                    },
+                    {
+                        title: '물산 마이그레이션 방법 검토',
+                        start: '2022-02-21',
+                        end: '2022-02-25'
+
+                    },
+                    {
+                        title: '물산 IS 팀 내용 공유 필요(운영서버 배포를 위한 준비)',
+                        start: '2022-02-24',
+                        end: '2022-03-04'
+
+                    },
+                    {
+                        title: '물산 예약시스템 최종 오픈',
+                        start: '2022-03-14',
+                        end: '2022-03-14'
+                    },
+
+                ]
             });
             calendar.render();
         });
